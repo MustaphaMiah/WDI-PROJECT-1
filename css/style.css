@@ -1,3 +1,37 @@
 body {
-  background-color: purple;
+  background-image:url('http://media.istockphoto.com/photos/green-felt-surface-background-texture-picture-id172172430?k=6&m=172172430&s=170667a&w=0&h=1-9viAJGx9dGRZb4fC0XeQkNPcPpz1r-kqTJH9beYNg=');
+  /*background-image:url('');*/
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /*background-size:cover;*/
+
+}
+
+h1 {
+  margin: 0px 0px;
+  text-align: center;
+  text-shadow: 0 0 3px #FF0000;
+}
+h4 {
+  color: black;
+  margin: 0px 0px;
+}
+
+p{
+  color: black;
+  font-size: 40px;
+}
+button {
+  /*margin: 0 auto;*/
+  height: 100px;
+  width: 100px;
+  text-align: center;
+
+}
+
+#spinner {
+  width: 50%;
+  height: auto;
+  text-align: center;
 }
