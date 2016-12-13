@@ -1,13 +1,11 @@
 body {
-  background-image:url('http://media.istockphoto.com/photos/green-felt-surface-background-texture-picture-id172172430?k=6&m=172172430&s=170667a&w=0&h=1-9viAJGx9dGRZb4fC0XeQkNPcPpz1r-kqTJH9beYNg=');
-  /*background-image:url('');*/
-  background-repeat: repeat;
+  background-image:url('http://media.istockphoto.com/photos/green-background-picture-id172243295?k=6&m=172243295&s=170667a&w=0&h=87o6deZ5LxvUQ6ePVDLiU49JW4p7i8cGQPVlAS17-3Q=');
+  background-color: green;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  /*background-size:cover;*/
-
+  background-size: cover;
 }
-
 h1 {
   margin: 0px 0px;
   text-align: center;
@@ -17,7 +15,6 @@ h4 {
   color: black;
   margin: 0px 0px;
 }
-
 p{
   color: black;
   font-size: 40px;
@@ -27,11 +24,20 @@ button {
   height: 100px;
   width: 100px;
   text-align: center;
-
 }
-
 #spinner {
   width: 50%;
   height: auto;
   text-align: center;
+  float: right;
+}
+.page {
+  margin: 20px auto 0;
+  width: 1100px;
+}
+#audio {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  height: auto;
 }
