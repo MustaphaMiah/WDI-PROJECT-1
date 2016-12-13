@@ -11,7 +11,7 @@ function checkForWin() {
   // console.log('running');
   $('#spinner').attr('src', 'images/frozen.png');
   if (userInput === computerChoice) {
-    $('#message').text('You chose ' + userInput + ' and the wheel gave us ' +  computerChoice + '. You Win.');
+    $('#message').text('You chose ' + userInput + ' and the wheel gave us ' +  computerChoice + '. You Win!');
     balance += stake;
   } else if (userInput !== computerChoice) {
     $('#message').text('You chose ' + userInput + ' and the wheel gave us ' +  computerChoice + '. You have lost.');
@@ -37,7 +37,7 @@ function start(){
     $('#spinner').attr('src', 'images/giphy.gif');
     var audio = new Audio('audio/wheel.mp3');
     audio.play();
-    setTimeout(checkForWin, 5000);
+    setTimeout(checkForWin, 14000);
   });
   $('.numbers').on('click', function(){
     userInput = $(this).attr('id');
@@ -46,7 +46,7 @@ function start(){
     $('#spinner').attr('src', 'images/giphy.gif');
     var audio = new Audio('audio/wheel.mp3');
     audio.play();
-    setTimeout(checkForWin, 5000);
+    setTimeout(checkForWin, 14000);
   });
   $('.stake').on('click', function(){
     stake = parseInt($(this).attr('id'));

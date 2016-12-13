@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Roulette</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
@@ -12,9 +13,30 @@
   <style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/sports/spo-1/spo58.cur), progress !important;}</style><a href="http://www.cursors-4u.com/cursor/2005/10/07/spo58.html" target="_blank" title="Dice"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Dice" style="position:absolute; top: 0px; right: 0px;" /></a>
 </head>
 <body>
-  <h1><a><img src="http://blog.flamingtext.com/blog/2016/12/12/flamingtext_com_1481558734_701817001.gif"></a></h1>
+  <main>
+    <h1>Roulette</h1>
+    <div class="screen">
+      <img id="spinner" src="images/frozen.png" alt="">
+      <div class="balance">
+        <p id="bank">Your balance is &pound; <span id="balance">100</span></p>
+      </div>
+    </div>
+    <p id="message">Place your bets</p>
+    <div class="selection">
+      <button class="colours " id="red">Red</button>
+      <button class="colours" id="black">Black</button>
+      <button class="numbers" id="evens">Evens</button>
+      <button class="numbers" id="odds">Odds</button>
+    </div>
+    <div class="stakeButtons">
+      <button class="stake" id="5">	&pound;5</button>
+      <button class="stake" id="10">&pound;10</button>
+      <button class="stake" id="15">&pound;15</button>
+      <button class="stake" id="20">&pound;20</button>
+    </div>
+  </main>
+  <!-- <h1><a><img src="http://blog.flamingtext.com/blog/2016/12/12/flamingtext_com_1481558734_701817001.gif"></a></h1>
   <div class="music">
-    <!-- <h4 class ="music">Toggle On/Off</h4> -->
     <audio controls autoplay loop id="audio">
       <source src="audio/c.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -25,6 +47,7 @@
       <p id="message">Place your bets</p>
       <p>Your stake is &pound; <span id="stake">0</span></p>
       <img id="spinner" src="images/frozen.png" alt="">
+      <img id="table" src="images/table.jpeg">
       <div class="selection">
         <button class="colours" id="red">Red</button>
         <button class="colours" id="black">Black</button>
@@ -37,6 +60,6 @@
         <button class="stake" id="15">&pound;15</button>
         <button class="stake" id="20">&pound;20</button>
       </div>
-    </div>
+    </div> -->
   </body>
   </html>
