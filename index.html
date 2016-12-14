@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Roulette</title>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -14,7 +15,7 @@
 </head>
 <body>
   <main>
-    <h1>Roulette</h1>
+    <h1>GAMEBOY Casino</h1>
     <div class="screen">
       <img id="spinner" src="images/frozen.png" alt="">
       <div class="balance">
@@ -34,32 +35,13 @@
       <button class="stake" id="15">&pound;15</button>
       <button class="stake" id="20">&pound;20</button>
     </div>
+    <footer>
+      Developed by Musty <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDI4LjQ1OCAyOC40NTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI4LjQ1OCAyOC40NTg7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPGc+Cgk8cGF0aCBkPSJNMTMuMjcxLDIwLjQ2OWMtMS41OSwwLTIuOTgtMC4zOTQtMy45MzQtMS4zNDhsMCwwQzUuNzk3LDE1LjU4LDkuOTY3LDYuMDE3LDEzLjQwMywyLjU4YzMuNDM5LTMuNDQsOS4wMzYtMy40MzksMTIuNDc2LDAgICBjMy40MzksMy40MzksMy40MzksOS4wMzYsMCwxMi40NzZDMjMuMzY4LDE3LjU2NywxNy41ODUsMjAuNDY5LDEzLjI3MSwyMC40Njl6IE0xMC4wNDQsMTguNDE0ICAgYzIuOTcyLDIuOTcsMTEuOTY3LTAuOTA2LDE1LjEyNy00LjA2NWMzLjA0OS0zLjA1LDMuMDQ5LTguMDEyLDAtMTEuMDYyYy0zLjA0OS0zLjA0OS04LjAxMS0zLjA1LTExLjA2MiwwICAgQzEwLjk1MSw2LjQ0OCw3LjA3NSwxNS40NDQsMTAuMDQ0LDE4LjQxNEwxMC4wNDQsMTguNDE0eiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTYuNDU0LDI4LjQ1N2MtMC44NDUsMC0xLjY4OS0wLjMyMS0yLjMzMy0wLjk2NWMtMC41OTMtMC41OTQtMC45MjctMS4zNzItMC45NTYtMi4xOTljLTAuODI3LTAuMDI5LTEuNjA2LTAuMzYyLTIuMi0wLjk1NiAgIEMwLjM0MywyMy43MTQsMCwyMi44ODYsMCwyMi4wMDRjMC0wLjg4MSwwLjM0My0xLjcwOSwwLjk2Ni0yLjMzMmMxLjIxOC0xLjIxNywzLjMyMy0xLjI1MSw0LjU3OC0wLjA4NWwyLjgzMS0yLjgzMSAgIGMwLjE5NS0wLjE5NSwwLjUxMi0wLjE5NSwwLjcwNywwczAuMTk1LDAuNTEyLDAsMC43MDdsLTMuMjA5LDMuMjFjLTAuMTAzLDAuMTAyLTAuMjQ1LDAuMTU2LTAuMzg4LDAuMTQ2ICAgYy0wLjE0NS0wLjAxLTAuMjc3LTAuMDgyLTAuMzY0LTAuMTk3Yy0wLjA4Ni0wLjExNC0wLjEzNC0wLjE4Mi0wLjE5NC0wLjI0MWMtMC44Ny0wLjg3MS0yLjM4Mi0wLjg3LTMuMjUyLTAuMDAxICAgQzEuMjM5LDIwLjgxNCwxLDIxLjM5MSwxLDIyLjAwNWMwLDAuNjEzLDAuMjM5LDEuMTksMC42NzMsMS42MjVjMC41MTEsMC41MTEsMS4yMjUsMC43NDQsMS45NDksMC42NDEgICBjMC4xNTUtMC4wMjEsMC4zMTMsMC4wMywwLjQyNCwwLjE0MmMwLjExMSwwLjExMSwwLjE2NCwwLjI2OCwwLjE0MiwwLjQyNGMtMC4xMDMsMC43MjksMC4xMywxLjQzOCwwLjY0MSwxLjk0OSAgIGMwLjg5NiwwLjg5NiwyLjM1NSwwLjg5NiwzLjI1MSwwYzAuODk2LTAuODk2LDAuODk2LTIuMzU0LDAtMy4yNTFjLTAuMDYtMC4wNi0wLjEyNi0wLjEwNy0wLjE5MS0wLjE1NiAgIGMtMC4xMTYtMC4wODgtMC4yMTMtMC4yMzktMC4yMjMtMC4zODRzMC4wMTgtMC4zMDUsMC4xMjEtMC40MDdsMy4yMDktMy4yMWMwLjE5NS0wLjE5NSwwLjUxMi0wLjE5NSwwLjcwNywwczAuMTk1LDAuNTEyLDAsMC43MDcgICBsLTIuODMxLDIuODMxYzEuMjAxLDEuMjkyLDEuMTcyLDMuMzItMC4wODUsNC41NzdDOC4xNDQsMjguMTM1LDcuMjk5LDI4LjQ1Nyw2LjQ1NCwyOC40NTd6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8cGF0aCBkPSJNMjQuOTg5LDEwLjUzMWMtMC4wODEsMC0wLjE2My0wLjAyLTAuMjM5LTAuMDYyYy0wLjI0Mi0wLjEzMS0wLjMzMS0wLjQzMy0wLjIwMS0wLjY3NWMwLjAzMi0wLjA2MywwLjY5OS0xLjM4Mi0wLjI4My0zLjE2ICAgYy0wLjEzMy0wLjI0MS0wLjA0NS0wLjU0NiwwLjE5Ni0wLjY3OWMwLjI0Mi0wLjEzNiwwLjU0Ni0wLjA0NiwwLjY4LDAuMTk2YzEuMjU5LDIuMjgyLDAuMzI3LDQuMDQ0LDAuMjg2LDQuMTE4ICAgQzI1LjMzOCwxMC40MzcsMjUuMTY3LDEwLjUzMSwyNC45ODksMTAuNTMxeiIgZmlsbD0iIzAwMDAwMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+    </footer>
   </main>
-  <!-- <h1><a><img src="http://blog.flamingtext.com/blog/2016/12/12/flamingtext_com_1481558734_701817001.gif"></a></h1>
-  <div class="music">
-    <audio controls autoplay loop id="audio">
-      <source src="audio/c.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-    <div class="page">
-      <p id="bank">Your balance is &pound; <span id="balance">100</span></p>
-      <p id="message">Place your bets</p>
-      <p>Your stake is &pound; <span id="stake">0</span></p>
-      <img id="spinner" src="images/frozen.png" alt="">
-      <img id="table" src="images/table.jpeg">
-      <div class="selection">
-        <button class="colours" id="red">Red</button>
-        <button class="colours" id="black">Black</button>
-        <button class="numbers" id="evens">Evens</button>
-        <button class="numbers" id="odds">Odds</button>
-      </div>
-      <div class="stakeButtons">
-        <button class="stake" id="5">	&pound;5</button>
-        <button class="stake" id="10">&pound;10</button>
-        <button class="stake" id="15">&pound;15</button>
-        <button class="stake" id="20">&pound;20</button>
-      </div>
-    </div> -->
+  <audio controls autoplay loop id="audio">
+    <source src="audio/c.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
   </body>
   </html>
