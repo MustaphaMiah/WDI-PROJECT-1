@@ -4,11 +4,15 @@ This is my first project from my Web Development Immersive course at General Ass
 <br>
 </br>
 
-My project is based on a the famous casino game, Roulette.
+My project is based on the infamous casino game, Roulette.
 
-It is a rather addictive game with generations arguing whether its luck vs stratergy. Whether the house fixes the wheel? 
+Roulette is a casino game named after the French word meaning little wheel. 
 
-I am pretty sure it's pure random, well atleasy my game isn't bias.
+It is an unhealthily addictive game, with many arguing whether it's luck or stratergy. 
+
+Some people argue whether the house fixes the wheel? 
+
+I am pretty sure it's purely random, well atleast my game isn't bias.
 
 
 
